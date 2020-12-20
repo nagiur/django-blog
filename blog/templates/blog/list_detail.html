@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+
+{% block title %} {{ post.title}}{% endblock %}
+
+{% block content %}
+
+  <div class="card mb-4">
+    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">{{ post.title}}</h2>
+      <p class="card-text">{{ post.body }}</p>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on {{ post.publish }} by
+      <a href="#">{{ post.author}}</a>
+    </div>
+  </div>
+
+
+
+{% endblock %}
+
