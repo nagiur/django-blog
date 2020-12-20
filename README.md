@@ -1,1 +1,2 @@
 # django-blog
+Blog Feature
